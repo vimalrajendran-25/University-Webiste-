@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="sub-header">
+      <nav>
+        <a href="index.html"><img src="Assets/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="">HOME</a></li>
+            <li><a href="">ABOUT</a></li>
+            <li><a href="">COURSE</a></li>
+            <li><a href="">BLOG</a></li>
+            <li><a href="">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+
+      <h1>About Us</h1>
+    </header>
+
+    <main class="about-us">
+        <div class="row">
+            <div class="about-col">
+                <h1>We are the world's largest university</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, nihil. Quibusdam, culpa et dicta repellat doloremque unde odit delectus enim minima modi omnis nesciunt? Enim odio optio minus deleniti suscipit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta dolore impedit earum ab ratione necessitatibus minus inventore architecto nemo cum.</p>
+                <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+            </div>
+            <div class="about-col">
+                <img src="Assets/about.jpg" alt="">
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer">
+      <h4>About Us</h4>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos,
+        sit?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id,
+        consequatur!<br />
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, dolore.
+      </p>
+      <div class="icons">
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+      </div>
+      <p>Made with <i class="fa-solid fa-heart"></i> by Vimal Kumar</p>
+    </footer>
+
+    <!-- Javascript for Toggle Menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
